@@ -1,0 +1,773 @@
+body {
+    background-color: rgba(252,210,50,255);
+}
+
+p,
+h1,
+h2,
+h3,
+label {
+    margin: 0px;
+}
+
+
+
+.text-color {
+    color: rgb(48, 47, 56);
+}
+
+/* navigation styles */
+
+
+.navbar-brand {
+    height: 56px;
+}
+
+
+.logo-font {
+    font-size: 10px;
+}
+
+.logo-size {
+   max-height: 80%;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url();
+}
+
+.hamburger-1 {
+        width: 35px;
+        height: 5px;
+        background-color:  rgb(48, 47, 56);
+        margin: 6px 0;
+        border-radius: 5px;
+}
+
+.hamburger-2 {
+    width: 28px;
+    height: 5px;
+    background-color:  rgb(48, 47, 56);
+    margin: 6px 0px 6px auto;
+    border-radius: 5px;
+}
+
+.hamburger-3 {
+    width: 22px;
+    height: 5px;
+    background-color: rgb(48, 47, 56);
+    margin: 6px 0px 6px auto; 
+    border-radius: 5px;
+}
+
+.change .hamburger-1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .hamburger-2 {opacity: 0;}
+  
+  .change .hamburger-3 {
+    width: 35px;
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+.link-styles {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black !important;
+}
+
+.btn-danger {
+    background-color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.brainster-labs {
+    background-image: url(./images/StockSnap_M6U4LP98AC.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    
+}
+
+.h-properties {
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.check-styles {
+    background-color: rgb(48, 47, 56);
+    border-right: 1px solid rgb(68, 67, 80);
+    width: 33.333%;
+    align-items: center;
+}
+
+.check-styles:hover {
+    background-color: rgba(235,59,59,255);
+    cursor: pointer;
+    color: black !important;
+}
+
+.check-p-properties {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    padding: 10px;
+}
+
+.check-p-properties:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+
+  
+  
+  
+
+.containerCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .containerCheckBox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    user-select: none;
+  }
+  
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: rgb(48, 47, 56);
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+  }
+  
+  
+  .containerCheckBox input:checked ~ .checkmark {
+    background: black;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .containerCheckBox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .containerCheckBox .checkmark:after {
+    left: 0.5em;
+    top: 0.33em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #dc3545;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+  .selected {
+    background-color: #dc3545;
+    color: black;
+  }
+
+  
+  
+
+
+
+
+.input-properties {
+    position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+visibility: hidden;
+}
+
+
+.input-properties:hover {
+    display: flex;
+   
+}
+
+  .btn-properties {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-properties span {
+    color: black;
+    font-weight: 500;
+  }
+ 
+  .dropdown-content a:hover {background-color: white;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown-item {
+    color: black !important;
+    font-weight: 500;
+  }
+
+
+
+ .send-button {
+    height: 40px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    width: 48%;
+    margin-top: 40px;
+    margin-left: 10px;
+ }
+  
+
+/* large screen */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.card-section {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-2 {
+    font-weight: bold;
+    padding: 20px 0px;
+    color: rgb(48, 47, 56);
+}
+
+.card-properties {
+    background-color: white;
+    margin: 0px;
+    border: 1px transparent;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+
+}
+
+.img-card {
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.academy-properties {
+    color: rgb(48, 47, 56);
+    font-size: 0.9rem;
+    background-color: rgba(252,210,50,255);
+    padding: 5px 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.heading-properties {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color:rgb(48, 47, 56);
+}
+
+.card-paragraph {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(48, 47, 56);
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.paragraph-date {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.card-button {
+    color: white;
+    background-color: rgba(255,19,0,255);
+    border: 1px solid rgba(255,19,0,255);
+    border-radius: 10px;
+    padding: 10px 40px;
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.span {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.last-card {
+    display: none;
+}
+
+.card-properties:hover {
+    margin: -5px;
+    
+}
+
+.card-links:hover {
+    text-decoration-line: none;
+}
+
+.form {
+    width: 80%;
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: calc(100vh - 154px);
+    
+}
+.form h1 {
+    font-weight: 900;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+.form p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.form-sections {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+
+.form-properties {
+    width: 50%;
+    padding: 0 10px;
+    margin-top: 10px;
+
+}
+
+.form-styles {
+    border-radius: 5px;
+    border: none;
+    font-size: 10px;
+    font-style: italic;
+    width: 100%;
+    height: 40px;
+    padding: 1rem;
+}
+
+.footer {
+    
+    background-color: rgb(48, 47, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100% !important;
+}
+
+.p-footer {
+    color: white;
+}
+
+.heart {
+    color: red;
+}
+
+.showmore {
+    color: white;
+    background-color: rgba(255,19,0,255);
+    border: 1px solid rgba(255,19,0,255);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* MEDIA MEDIA MEDIA */
+
+@media (max-width: 425px) {
+   
+     
+    .navbar-collapse {
+        margin-left: -16px;
+        margin-right: -16px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+        padding-top: 150px;
+        padding-left: 25px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(68, 68, 68);
+        color: white;
+    }
+
+    .img-card {
+        height: 40%;
+    }
+
+
+    .change .hamburger-1 {
+        background-color: white !important;
+    }
+
+    .change .hamburger-3 {
+        background-color: white !important;
+    }
+
+    .link-styles {
+        padding-top: 10px;
+        color: black!important;
+        
+    }
+
+    li .link-styles {
+        color: white !important;
+        padding-bottom: 20px;
+    }
+    .nav-item .link-styles {
+        
+        text-align: start !important ;
+    }
+   
+
+    .checkmark {
+        height: 1.3em;
+        width: 2em !important;
+        border-radius: 50px;
+        transition: all 0.5s;
+        --spread: 20px;
+      }
+      
+
+    .brainster-labs {
+        height: 200px;
+    }
+    .h-properties {
+        font-size: 3rem;
+    }
+
+    .check-styles {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgb(68, 67, 80);
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
+    .card-section {
+        width: 90%;
+        margin: o auto;
+    }
+
+    .card-properties .span {
+       padding-bottom: 0px;
+    }
+
+    .form {
+        padding-top: 50px;
+        width: 95%;
+    }
+    .form h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .form-sections {
+        display: block !important;
+    }
+    .form-properties {
+        width: 100%;
+    }
+    
+    .containerCheckBox {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .send-button {
+        margin-top: 80px;
+    }
+    .form-sections button {
+        width: 96%;
+        
+    }
+    .footer{
+        margin-top: 32px;
+    }
+
+    .col-12 {
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+
+    
+    .custom-select {
+        height: 40px;
+    }
+     .col-12 .link-styles {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+     }
+
+    
+}
+
+
+@media (max-width: 768px){
+    .card-paragraph {
+        font-size: 0.9;
+    }
+
+    .paragraph-date {
+        margin-bottom: 10px;
+    }
+    .card-section {
+        width: 85%;
+    }
+    .nav-item .link-styles {
+        font-size: 11px;
+        text-align: center;
+        
+    }
+    .navbar-collapse .btn {
+        height: 39px !important;
+        font-size: 10.5px;
+        align-items: center;
+    }
+    .navbar-collapse .btn span {
+        margin: 0 auto;
+    }
+    .containerCheckBox{
+        font-size: 13px;
+        padding: 12px;
+    }
+    .checkmark{
+        height: 1.6em;
+        width: 3em ;
+        margin-right: 12px;
+        margin-left: auto;
+        border-radius: 50px;
+        transition: all 0.5s;
+        --spread: 30px;
+    }
+    .containerCheckBox .checkmark:after {
+    left: 0.75em;
+    top: 0.5em;
+    width: 0.4em;
+    height: 0.6em;
+    border: solid #dc3545;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    }
+    .col-12 {
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+
+
+    .custom-select {
+        height: 40px;
+    }
+    .col-12 .link-styles {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    .footer{
+        margin-top: 32px;
+        bottom: 0px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-properties {
+        margin: 10px;
+    }
+    .showmore {
+        margin-left: 10px;
+    }
+   
+    
+}
+
+
+@media (max-width: 1024px){
+    .card-paragraph {
+        font-size: 0.9;
+    }
+
+    .paragraph-date {
+        margin-bottom: 10px;
+    }
+    .card-section {
+        width: 85%;
+    }
+    .nav-item .link-styles {
+        font-size: 11px;
+        
+        
+    }
+    .navbar-collapse .btn {
+        height: 35px;
+        font-size: 11px;
+        align-items: center;
+    }
+    .navbar-collapse .btn span {
+        margin: 0 auto;
+    }
+    .containerCheckBox{
+        font-size: 13px;
+        padding: 12px;
+        font-weight: bold;
+    }
+    .checkmark{
+        height: 2em;
+        width: 2.2em;
+        margin-right: 0.8px;
+        margin-left: auto;
+        border-radius: 50px;
+        transition: all 0.5s;
+        --spread: 30px;
+    }
+    .containerCheckBox .checkmark:after {
+    left: 0.75em;
+    top: 0.5em;
+    width: 0.4em;
+    height: 0.6em;
+    border: solid #dc3545;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    }
+    .col-12 {
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+
+
+    .custom-select {
+        height: 40px;
+    }
+    .col-12 .link-styles {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    .footer{
+        margin-top: 32px;
+        bottom: 0px;
+    }
+    .card-properties{
+        margin: 10px;
+    }
+
+    
+}
+
+@media (min-width: 1440px) {
+    .card-properties {
+        margin: 10px;
+    }
+
+    .card-width {
+        width: 33.333%;
+        justify-content: flex-start;
+    }
+
+    .last-card {
+        display: flex;
+        background-color: transparent;
+    }
+    .showmore {
+        margin-left: 10px;
+    }
+    .img-card {
+        height: 35%;
+    }
+    .heading-properties {
+        font-size: 1.2rem;
+    }
+    .custom-select {
+        height: 40px;
+    }
+    .col-12 .link-styles {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    .col-12{
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .containerCheckBox{
+        font-size: 18px;
+        padding: 25px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    .checkmark{
+        height: 1.6em;
+        width: 1.8em;
+        margin-right: 12px;
+        margin-left: auto;
+        border-radius: 50px;
+        transition: all 0.7s;
+        --spread: 30px;
+    }
+    .containerCheckBox .checkmark:after {
+    left: 0.6em;
+    top: 0.4em;
+    width: 0.4em;
+    height: 0.6em;
+    border: solid #dc3545;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    }
+   
+}
+
+

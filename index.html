@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project1</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/64087b922b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md px-md-5 py-md-4 navbar-light menu">
+      <a class="navbar-brand text-center m-0" href="#">
+        <img src="./images/Logo.png" alt="" class="logo-size" />
+        <p
+          class="logo-font text-uppercase text-center font-weight-bold text-color"
+        >
+          brainster
+        </p>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbarToggler10"
+        aria-controls="myNavbarToggler10"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span onclick="myFunction(this)">
+          <div class="hamburger-1"></div>
+          <div class="hamburger-2"></div>
+          <div class="hamburger-3"></div>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbarToggler10">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item ml-lg-4">
+            <a
+              class="nav-link link-styles"
+              href="https://brainster.co/marketing"
+              ><strong>Академија за маркетинг</strong></a
+            >
+          </li>
+          <li class="nav-item ml-lg-4">
+            <a
+              class="nav-link link-styles"
+              href="https://brainster.co/front-end/"
+              ><strong>Академија за програмирање</strong></a
+            >
+          </li>
+          <li class="nav-item ml-lg-4">
+            <a
+              class="nav-link link-styles"
+              href="https://brainster.co/data-science/"
+              ><strong>Академија за data science</strong></a
+            >
+          </li>
+          <li class="nav-item ml-lg-4">
+            <a
+              class="nav-link link-styles"
+              href="https://brainster.co/graphic-design/"
+              ><strong>Академија за дизајн</strong></a
+            >
+          </li>
+        </ul>
+        <a href="./form.html" class="btn btn-danger" id="button">
+          <span>Вработи наш студент</span>
+        </a>
+      </div>
+    </nav>
+    <div
+      class="brainster-labs d-flex justify-content-center align-items-center"
+    >
+      <h1 class="h-properties">Brainster Labs</h1>
+    </div>
+    <div class="select-program d-md-flex w-100">
+      <label class="filters check-styles d-flex text-white containerCheckBox">
+        Проекти на студенти по академијата за маркетинг
+        <input type="checkbox" id="filter-marketing" class="input-properties" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="filters check-styles d-flex text-white containerCheckBox">
+        Проекти на студенти по академијата за програмирање
+        <input type="checkbox" id="filter-coding" class="input-properties" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="filters check-styles d-flex text-white containerCheckBox">
+        Проекти на студенти по академијата за дизајн
+        <input type="checkbox" id="filter-design" class="input-properties" />
+        <div class="checkmark"></div>
+      </label>
+    </div>
+
+    <div class="card-section mb-5">
+      <h2 class="header-2">Проекти</h2>
+      <div class="cards-container">
+        <div class="card-properties marketing mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8GETAUWFBE.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Маркетинг</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties design mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_3CZQ87F245.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties design">Академија за Дизајн</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_7U1ON2R0FY.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties marketing mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_F13A7GWM7O.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Маркетинг</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_HMPNPRBUJ7.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_LK46EHFEEF.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties marketing mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_XFDISCYWDU.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Маркетинг</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8GETAUWFBE.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_3CZQ87F245.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties marketing mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8GETAUWFBE.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Маркетинг</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8GETAUWFBE.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties design mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_7U1ON2R0FY.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Дизајн</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8GETAUWFBE.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties design mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8LHTBAZW32.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Дизајн</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_F13A7GWM7O.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties marketing mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_HMPNPRBUJ7.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Маркетинг</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_3CZQ87F245.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties coding mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_F13A7GWM7O.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Програмирање</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties marketing mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_8GETAUWFBE.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Маркетинг</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-properties design mb-3">
+          <a href="#" class="card-links">
+            <img
+              src="./images/StockSnap_LK46EHFEEF.jpg"
+              alt=""
+              class="img-card"
+            />
+            <p class="academy-properties">Академија за Дизајн</p>
+            <h4 class="heading-properties">
+              Име на проектот стои овде во две линии
+            </h4>
+            <p class="card-paragraph">
+              Краток опис во кој студентите ќе можат да опишат за што се работи
+              во проектот.
+            </p>
+            <p class="paragraph-date">Април - Октомври 2019</p>
+            <div class="span">
+              <a href="#" class="card-button"> Дознај повеќе</a>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button id="show-more" class="showmore">Прикажи повеќе</button>
+    </div>
+    <div class="footer">
+      <p class="p-footer">
+        Изработено со <i class="fa-solid fa-heart heart"></i> од студентите на
+        Brainster
+      </p>
+    </div>
+
+    <!-- jQuery library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
